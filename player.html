@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="player.css" rel="stylesheet" type="text/css" />
+    <title>Playlist</title>
+  </head>
+  <body>
+    <div class="player">
+      <h1>Playing from Your Library Songs</h1>
+      <div class="player__header open-header">
+        <div class="player__img player__img--absolute slider open-slider">
+          <button class="player__button playlist">
+            <img
+            />
+          </button>
+          
+          <div class="slider__content">
+            <img
+              class="img slider__img"
+              src="img/adan.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/callyou.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/cuadro.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/cypher.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i0.wp.com/www.scienceofnoise.net/wp-content/uploads/2020/10/60-Rhapsody-Dawn-of-Victory.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="/img/discord.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/dontblameme.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/dramaturgy.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/dulceamor.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="/img/nolie.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="/img/outoflove.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="/img/patience.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="/img/ride.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="/img/sinfonia.jpg"
+              alt="cover"
+            />
+            <img
+            class="img slider__img"
+            src="/img/uno.jpg"
+            alt="cover"
+          />
+          </div>
+        </div>
+
+        <div class="player__controls move">
+         
+          <div class="progres">
+            <div class="progres__filled"></div>
+          </div>
+
+          <button class="player__button back">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/back.svg"
+              alt="back-icon"
+            />
+          </button>
+          <p class="player__context slider__context">
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+          </p>
+          <button class="player__button next">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/next.svg"
+              alt="next-icon"
+            />
+          </button>
+          <button class="player__button player__button--absolute--center play">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/play.svg"
+              alt="play-icon"
+            />
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/pause.svg"
+              alt="pause-icon"
+            />
+          </button>
+        </div>
+      </div>
+
+      <ul class="player__playlist list">
+        <li class="player__song">
+         
+          <p class="player__context">
+            <b class="player__song-name">Adan y Eva</b>
+            <span class="flex">
+              <span class="player__title">Paulo Londra</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          
+          <audio class="audio" id="audio" src="/canciones/adan.mp3"></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/2.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Can I Call You Tonight?</b>
+            <span class="flex">
+              <span class="player__title">Dayglow</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/callyou.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/3.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">La vida es un cuadro</b>
+            <span class="flex">
+              <span class="player__title">Leo Rizzi</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/cuadro.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/4.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Cypher 4</b>
+            <span class="flex">
+              <span class="player__title">BTS</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/cypher.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/5.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Dawn of Victory</b>
+            <span class="flex">
+              <span class="player__title">Rhapsody</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/dawn.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/6.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Discord</b>
+            <span class="flex">
+              <span class="player__title">The Living Tombstone</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/Discord.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Dont Blame Me</b>
+            <span class="flex">
+              <span class="player__title">Taylor Swift</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/dontblameme.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Dramaturgy</b>
+            <span class="flex">
+              <span class="player__title">Eve</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/dramaturgy.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Mi Dulce Amor</b>
+            <span class="flex">
+              <span class="player__title">Los inquietos</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/dulceamor.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">No Lie</b>
+            <span class="flex">
+              <span class="player__title">Sean Paul ft. Dua Lipa</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/nolie.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Out Of Love</b>
+            <span class="flex">
+              <span class="player__title">Alessia Cara</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/outoflove.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Patience</b>
+            <span class="flex">
+              <span class="player__title">Guns 'N Roses</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/patience.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Ride</b>
+            <span class="flex">
+              <span class="player__title">Twenty One Pilots</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/ride.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">La sinfonia del nuevo mundo</b>
+            <span class="flex">
+              <span class="player__title">Antonín Dvořák</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/sinfonia.mp3"
+          ></audio>
+          
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="http://physical-authority.surge.sh/imgs/7.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">UNO</b>
+            <span class="flex">
+              <span class="player__title">Enrique Santos</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="/canciones/uno.mp3"
+          ></audio>
+          
+        </li>
+      </ul>
+    </div>
+    <script src="/player.js"></script>
+  </body>
+</html>
